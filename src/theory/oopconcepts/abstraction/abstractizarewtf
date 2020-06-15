@@ -28,7 +28,7 @@ Deci ce am inteles eu din abstractizare:
      Bucatar - interfata
      John - clasa concreta care implementeaza interfata Bucatar
 
-     conceptul e program to an interface.
+     conceptul e program to an interface, not an implementation.
      daca in restaurant se va cauta un bucatar care poate face tot ce e necesar, dar anume John sa fie...pai la
      plecarea lui John (clasa noastra concreta) o sa fie capet ce problema pentru noi.
      dar daca nu ne doare capul daca e John sau nu - pai putem usor accepta orice alta persoana (alta clasa concreta)
