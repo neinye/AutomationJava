@@ -1,0 +1,36 @@
+Deci ce am inteles eu din abstractizare:
+
+1. Menirea interfetei si clasei abstractre este de a oferi abstractizare si in rezultat de a ajunge la polimorfism
+2. Sa zicem ca avem clasa abstracta Shape
+    de asemenea avem clasele care o extind: Circle, Square, Triangle etc
+  pai pe mine nu ma intereseaza cum eu calculez anumite chestii la fiecare dintre figuri,
+  eu am clasa abstracta, eu chem metoda la perimetru la obiect de tip Shape dar nu stiu ce formula va fi folosita.
+  Undeva in aplicatie eu fac un obiect sau o lista de tip Shape care in run time e populata fie cu triunghi, fie cu
+  patrat si chem metoda de calculare a perimetrului, sa zicem.
+  EU in timpul compilarii idee n-am  ce obiecte si ce formule vor fi aplicate, pentru ca este abstractizat - asta se
+  determina de compilator la Run Time.
+
+  sa zicem Shape are metoda draw(); - care e abstracta, iar fiecare din clasele concrete are implementarea diferita a ei
+
+  alta clasa Canvas, care deseneaza figurile, are metoda de genul
+      draw(ArrayList<Shape> shapes){
+        for (var shape: shapes){
+            shape.draw()
+        }
+      }
+  aici eu idee n-am ce metode vor fi chemate. noi ascundem detaliile implementarii
+
+3. daca mai simplu. eu am un aparat de cafea care face tot ce vreau. aparatul de cafea e interfata, metodele (ceea ce el
+    face) eu le cunosc pentru ca deoarece, dar deja de implementarea la cum se prepara fiecare tip de cafea nu trebuie sa
+    ma doara capul.
+4. also, de ce e important sa fie aplicata abstractizarea:
+     eu am un restaurant. si am nevoie de un bucatar - nu ma doare capul cine anume, important sa-si faca treaba
+     Bucatar - interfata
+     John - clasa concreta care implementeaza interfata Bucatar
+
+     conceptul e program to an interface.
+     daca in restaurant se va cauta un bucatar care poate face tot ce e necesar, dar anume John sa fie...pai la
+     plecarea lui John (clasa noastra concreta) o sa fie capet ce problema pentru noi.
+     dar daca nu ne doare capul daca e John sau nu - pai putem usor accepta orice alta persoana (alta clasa concreta)
+     care poate face totul ce este solicitat de la un bucatar.
+     stii cum, nezamenimih liudei ne sushestvuet.

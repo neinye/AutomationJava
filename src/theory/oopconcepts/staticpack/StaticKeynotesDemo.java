@@ -2,8 +2,11 @@ package theory.oopconcepts.staticpack;
 
 public class StaticKeynotesDemo {
 
-    //Static method cannot use the non-static variable or method directly - have to transform those to static, else create an instance
-    // "this" and "super" keywords cannot be used in static context
+    /***
+     *   Static method cannot use the non-static variable or method directly - have to transform those to static,
+     *      else create an instance
+     *   "this" and "super" keywords cannot be used in static context
+     */
 
     private int addNum = 10;
     private static int addNumStatic = 10;
