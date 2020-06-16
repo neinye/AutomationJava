@@ -1,0 +1,36 @@
+asta desigur n-are nicio treaba cu ce am invatat eu, dar anyway let's leave it here.
+
+presupunem:
+avem ExceptionA.
+ExceptionB extinde ExceptionA
+ExceptionD extinde ExceptionB
+ExceptionC nu extinde nimic.
+
+O metoda arunca una din exceptiile astea.
+
+Intrebare: Care e ordinea la catch block?
+Ap iaca, zarubi na nosu. Logica e simpla ca buna seara
+Catch poate fi format din blocuri
+daca fac catch(ExceptionX) dar era aruncata Y, mergem la urmatorul catch pana dam de Y sau una din super ale acesteia
+adica mergem de la specific la generic
+
+In cazul dat:
+asa cum ExceptionC nu are nicio treaba cu celelalte si nu este extinsa, ea poate fi si la urma si la inceput, pofig
+ordinea prinderii exceptiilor: ExceptionD, ExceptionB, ExceptionA - pentru ca D extinde B si B extinde A.
+Simple as that
+
+ALSO:
+catch block pentru ExceptionA prinde si opreste ExceptionA. ExceptionB, ExceptionD(clasa curenta si toate care o extind)
+catch block pentru ExceptionB prinde si opreste ExceptionB, ExceptionD (clasa curenta si toate care o extind)
+catch block pentru ExceptionD prinde si opreste doar ExceptionD
+catch block pentru ExceptionC prinde si opreste ExceptionC
+
+asa ca daca punem catch block generic (A), nu e sens de pus si pentru B si D, compilatorul ii copchil mofturos
+de asta primul punem D, apoi B si deja A. de la specific la general.
+
+!!!!!!!amu la ce m-am gandit eu. nafiga de pus asa daca se poate numai A de pus.
+sa zicem ca exista diferite cai prin care exceptiile apar (throw la A,B,C,D)
+Daca folosim doar catch pentru A, idee n-o sa avem prin ce cale s-a ajuns la exceptie - A, B sau D. mai usor de corectat
+apoi.
+
+

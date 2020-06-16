@@ -1,5 +1,7 @@
 Deci ce am inteles eu din abstractizare:
 
+NB! O clasa abstracta nu poate fi instantiata!
+
 1. Menirea interfetei si clasei abstractre este de a oferi abstractizare si in rezultat de a ajunge la polimorfism
 2. Sa zicem ca avem clasa abstracta Shape
     de asemenea avem clasele care o extind: Circle, Square, Triangle etc

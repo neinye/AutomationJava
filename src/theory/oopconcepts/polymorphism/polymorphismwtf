@@ -1,0 +1,24 @@
+iata ce am inteles eu:
+1. scopul la override e sa poti folosi aceeasi metoda in alta clasa asa cum vrei tu.
+    metoda aia vine de la superclasa, sau de la interfata sau de la clasa abstracta
+2. overload asta ii cam ca si cu constructoarele:
+    cum ele pot fi de diferite feluri, asa si metodele, pot fi implementate diferit, in functie de tipul, numarul si
+    ordinea in care sunt date argumentele.
+    se face asta pentru ca sa poti folosi aceeasi metoda pentru diferite obiecte care au ceva specific.
+    dar face metoda acelasi lucru numai ca in dependenta de obiect pentru care face, sau argumentele sale
+    ceva de genu'
+
+    P.S. folosirea aceleiasi metode in alta clasa asa cum vrei tu e un gen de polimorfism (a metodei insusi), dar
+    override a clasei.
+
+CARE E CONSECINTA LA OVERRIDE:
+cand avem o ierarhie, override-ul, ca structura complexa devine problema
+
+Avem BaseClass cu o metoda
+Extind BaseClass cu ClassA si fac override chemand super-ul + adaugand logica noua
+Extind ClassA cu ClassB (iese deja ierarhizare multilevel) - facem override, fara sa chemam super-ul
+ClassB extindem cu ClassC si din nou facem override..
+putem continua mai departe.
+
+Daaaar! daca undeva metoda asta va face ce nu trebuie, va trebui sa mergem prin iearhia asta complexa si sa gasim
+problema, which is mostly pain in the ass.

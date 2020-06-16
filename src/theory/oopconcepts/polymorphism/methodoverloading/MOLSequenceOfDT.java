@@ -17,7 +17,7 @@ public class MOLSequenceOfDT {
     }
 
     //you can not do the same sequence and just change the names, compile time error
-    //if you uncomment that, it will give an error
+    //if you uncomment bellow, it will give an error
 
 //    public static void setSeatHeight(String variable3, int variable4){
 //        System.out.println("This is the third method.\nThe seat height is " + variable3 + " and the text is: " + variable4);

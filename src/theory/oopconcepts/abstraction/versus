@@ -1,0 +1,28 @@
+-----------------------------------------------------------------------------------------------------------------------
+                                                            |
+                   INTERFACE                                |                       ABSTRACT CLASS
+                                                            |
+-----------------------------------------------------------------------------------------------------------------------
+Methods of an interface are abstract and cannot have        |   Abstract class can have instance methods with default
+implementations                                             |      implementation
+-----------------------------------------------------------------------------------------------------------------------
+Variables declared in an interface are by default final     |   May contain non-final variables as a normal class would
+-----------------------------------------------------------------------------------------------------------------------
+Java interface is implemented by using the 'implements' kw  |   Abstract class is extended by using the 'extends' kw
+-----------------------------------------------------------------------------------------------------------------------
+An interface can extend another interface only              |   Can extend another Java class and implement multiple
+                                                            |   Java interfaces
+-----------------------------------------------------------------------------------------------------------------------
+A Java class can implement multiple interfaces              |   A Java class can extend only one abstract class
+-----------------------------------------------------------------------------------------------------------------------
+
+
+The interface is like a contract with the class, which says 'I only accept stuff, which looks like the signature I
+provide'. The class implements the interface by saying 'sure, I will make sure that I look like that'.
+So, the interface is kind of a prototype, there are only signatures of methods, which have no implementation, they
+have no behaviour of their own.
+
+An abstract class, on the other hand, is like any other class. Being similar to an interface, they, however, can have
+some implementation for the methods along with abstract methods (which have no implementation) These methods may
+(or may not) have a behaviour and can be overriden in the class that extends the abstract class.
+
