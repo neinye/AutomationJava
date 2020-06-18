@@ -12,8 +12,8 @@ import java.util.List;
  */
 public class ArrayLists {
     public static void main(String[] args) {
-        ArrayList<String> cars = new ArrayList<String>(/*the default is 10*/);
-        List<Integer> aList = new ArrayList<Integer>();
+        ArrayList<String> cars = new ArrayList<>(/*the default is 10*/);
+        List<Integer> aList = new ArrayList<>();
         //Adding elements to the Array List
         cars.add("BMW");
         cars.add("Audi");

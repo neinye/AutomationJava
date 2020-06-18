@@ -4,8 +4,8 @@ import java.sql.SQLException;
 
 /***
  * try cannot be written without either catch or finally
- * try-catch
- * try-finally
+ *      try-catch
+ *      try-finally
  * catch needs a try
  * finally always executes
  */
