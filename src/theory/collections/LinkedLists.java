@@ -14,7 +14,7 @@ public class LinkedLists {
 
     public static void main(String[] args) {
         LinkedList<String> cars = new LinkedList<>(/*the default is 10*/);
-        List<Integer> lList = new LinkedList<Integer>();
+        List<Integer> lList = new LinkedList<>();
 
 
         //Adding elements to the Linked List
