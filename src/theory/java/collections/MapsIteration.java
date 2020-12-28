@@ -11,8 +11,8 @@ public class MapsIteration {
 
         Map<Integer,String> hashMap = new HashMap<Integer, String>();
         hashMap.put(1, "BMW");
-        hashMap.put(4, "Honda");
-        hashMap.put(6, "Audi");
+        hashMap.put(6, "Honda");
+        hashMap.put(4, "Audi");
 
         //if we have a String value defined outside the for loops scope, we will not be able to define it inside them
 //        String value = " ";//***
@@ -31,8 +31,8 @@ public class MapsIteration {
         //maintains the order in which the elements are added
         Map<Integer,String> linkedMap = new LinkedHashMap<>();
         linkedMap.put(1, "BMW");
-        linkedMap.put(4, "Honda");
-        linkedMap.put(6, "Audi");
+        linkedMap.put(6, "Honda");
+        linkedMap.put(4, "Audi");
         System.out.println("-------Iteration 3------");
         System.out.println("Linked Hash Map");
         for(Integer key: linkedMap.keySet()) {

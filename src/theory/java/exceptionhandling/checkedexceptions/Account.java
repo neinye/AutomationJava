@@ -4,7 +4,7 @@ import java.sql.*;
 public class Account {
 
     public Connection getConn() throws SQLException {
-        String url = "jdbc;mysql://localhost:3306/";
+        String url = "jdbc:mysql://localhost:3306/";
         String user = "abc";
         String password = "code";
 

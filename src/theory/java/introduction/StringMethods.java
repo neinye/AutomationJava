@@ -15,12 +15,12 @@ public class StringMethods {
         System.out.println("Length of the string is: " + str.length());
         System.out.println("Character at index 2 is: " + str.charAt(4)); //space
         System.out.println(str.concat(". This is the appended string."));
-        System.out.println("Contains check: " + str.contains("testy"));
-        System.out.println("Starts with check: " + str.startsWith("Thi"));
-        System.out.println("Ends with check: " + str.endsWith(" string"));
+        System.out.println("'Contains' check: " + str.contains("testy"));
+        System.out.println("'Starts with' check: " + str.startsWith("Thi"));
+        System.out.println("'Ends with' check: " + str.endsWith(" string"));
         System.out.println("The string still is: " + str);
         System.out.println("Check if str1 equals str2: " + str1.equals(str2));
-        System.out.println("Returns index if 'q': " + str.indexOf('q'));
+        System.out.println("Returns index of 'q': " + str.indexOf('q'));
         System.out.println("Check if str3 is empty: " + str3.isEmpty());
         System.out.println("Replace: " + str6.replace('l', 'k'));
         System.out.println("Substring 1: " + str.substring(5));

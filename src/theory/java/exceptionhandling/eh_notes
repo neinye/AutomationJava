@@ -20,7 +20,7 @@ ordinea prinderii exceptiilor: ExceptionD, ExceptionB, ExceptionA - pentru ca D 
 Simple as that
 
 ALSO:
-catch block pentru ExceptionA prinde si opreste ExceptionA. ExceptionB, ExceptionD(clasa curenta si toate care o extind)
+catch block pentru ExceptionA prinde si opreste ExceptionA, ExceptionB, ExceptionD(clasa curenta si toate care o extind)
 catch block pentru ExceptionB prinde si opreste ExceptionB, ExceptionD (clasa curenta si toate care o extind)
 catch block pentru ExceptionD prinde si opreste doar ExceptionD
 catch block pentru ExceptionC prinde si opreste ExceptionC

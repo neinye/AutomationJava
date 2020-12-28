@@ -24,7 +24,7 @@ public class ArrayLists {
         System.out.println("The size of the Array List is: " + size);
 
         //Getting the value of the element at index i
-        System.out.println("The element at index 1 is: " + cars.get(1));
+        System.out.println("The element at index 1 is: " + cars.get(1)); //index starts at 0;
 
         //Iterating through the Array List
         System.out.println("Iterating through the Array List:");
@@ -42,7 +42,7 @@ public class ArrayLists {
         for(String car : cars){
             System.out.println("The value is: " + car);
         }
-
         aList.add(2, 10); //add stuff to different indexes
+        System.out.println("The size of aList is " + aList.size());
     }
 }
