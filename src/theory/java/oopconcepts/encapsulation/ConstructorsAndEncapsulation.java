@@ -26,7 +26,7 @@ public class ConstructorsAndEncapsulation {
     public ConstructorsAndEncapsulation() {
         System.out.println("Executing contructor without arguments");
     }
-    //Constructor without arguments
+    //Constructor with arguments
     public ConstructorsAndEncapsulation(String make, int year) {
         this.make = make;
         this.year = year;

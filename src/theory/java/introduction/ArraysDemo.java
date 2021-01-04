@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class ArraysDemo {
 
     public static void main(String[] args) {
-       int[] myIntArray1;
-       myIntArray1 = new int[10];
+       int[] myIntArray1; //array definition
+       myIntArray1 = new int[10]; //the array is now able to store 10 integer values
 
        myIntArray1[0] = 100;
        myIntArray1[1] = 90;
