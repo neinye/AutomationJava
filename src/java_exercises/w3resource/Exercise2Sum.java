@@ -1,7 +1,13 @@
 package java_exercises.w3resource;
 
 import java.util.Scanner;
-
+/*
+Write a Java program to print the sum of two numbers.
+Test Data:
+74 + 36
+Expected Output :
+110
+*/
 public class Exercise2Sum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
