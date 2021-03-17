@@ -1,0 +1,12 @@
+eu nu tin minte unde anume am folosit asta
+dar
+ACCESS MODIFIERS IN JAVA
+VERI IMPORTANT INFORMEISHN
+
+PRIVATE: accesibil dooaaar in aceeasi clasa
+DEFAULT: accesibil in clasa si in package (a se citi ca pokej)
+(daca ceva, cuvantul 'default' nu se scrie)
+PROTECTED: poate fi accesat in acelasi pokej, si in alte pack-uri doar daca in subclasele clasei respective
+PUBLIC: e accesibil pisti tat
+
+for more information pls gugl, nu degeaba el exista
